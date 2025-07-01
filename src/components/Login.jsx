@@ -23,7 +23,7 @@ const Login = () => {
     e.preventDefault();
 
     if (credentials.id.trim() === '' || credentials.password.trim() === '') {
-      toast.warn('⚠️ Please enter both ID and password.', {
+      toast.warn(' Please enter both ID and password.', {
         position: 'top-center',
         autoClose: 2000,
         theme: 'light',
@@ -51,7 +51,6 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-600 px-4">
       <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-        {/* Logo/Image */}
         <div className="flex justify-center mb-6">
           <img
             src="/image/png-boom.png"
